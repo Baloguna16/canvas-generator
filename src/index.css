@@ -1,0 +1,40 @@
+.carousel {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-cursor {
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+}
+
+.image {
+  width: 240px;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+}
+
+.slide {
+  opacity: 0;
+  transition-duration: 1s ease;
+}
+
+.slide.active {
+  opacity: 1;
+  transition-duration: 1s;
+}
+
+div.container {
+  display: grid;
+  grid-gap: 10px 10px;
+  grid-template-columns: auto auto auto;
+}
+
+div.item-center {
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
